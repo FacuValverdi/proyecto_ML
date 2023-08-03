@@ -1,0 +1,144 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #EAC926;
+}
+.searchBar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBar .logo{
+    margin: 5px;
+}
+
+#logo-empresa{
+    width:100%;
+}
+.mensaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-menu button{
+   color:white;
+   background-color: #1259c3;
+   width: 30px;
+   height: 30px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+   margin:auto;
+   
+}
+.banner_home{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+main{
+    width: 100%;
+    background-color: #ebebeb;
+    margin:0;
+}
+main div img{
+    width: 100%;
+}
+main article{
+    margin:0 auto 10px;
+    width: 90%;
+    background-color: white;
+}
+article div img{
+    width: 100%;
+}
+main h2{
+    font-size: 24px;
+    margin:5px auto 10px;
+    width: 90%;
+}
+.borde__carrito--verde{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+
+.content .desc-content, .content-off .desc-content{
+    border:solid 1px #ebebeb ;
+}
+p{
+   font-size: 12px; 
+}
+.ul-precio{
+    font-size: 18px;
+}
+.ul-desc{
+   color:#39b54a;
+}
+.ul-desc,.ul-descripcion{
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    margin: 10px;
+
+}
+footer div img{
+    margin-bottom: 5px;
+    width: 100%;
+}
+div .iconos-footer{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+div.sec1-desc-footer,div.sec2-desc-footer,div.sec3-desc-footer,section .sec4-footer{
+    width: 100%;
+    text-align: center;
+}
+
+  /* ---- maximo tamaño de celular segun devtools ---- */
+@media(max-width:425px){
+
+    div div .ul-descripcion{
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    nav{
+        display: none;
+    }
+}
+  /* ---- TABLETS ---- */
+@media(min-width:361px){
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* ---- DESKTOP ---- */
+@media(min-width:768px){
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu button{
+        display:none;
+    }
+    
+}
