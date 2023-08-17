@@ -50,62 +50,13 @@
         </div> 
     </header>
     <main>
-        <form action="resultadoRegistro.html" method="POST" class="formulario">
-            <div class="datos-basicos">
-                <div class="titulo">
-                    <h3>Datos basicos</h3>
-                </div>
-                <div class="input-txt">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" >
-                    <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" >
-                    <input type="email" id="email" name="email" placeholder="E-mail" >
-                </div>
-            </div>
-            <div class="fecha-nac">
-                <div class="titulo">
-                    <h3>Fecha de nacimiento</h3>
-                </div>
-                <div class="input-txt">
-                    <input type="date" id="date" name="date" >
-                    <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" >
-                </div>
-                
-            </div>
-            <div class="perfil-usuario">
-                <div class="titulo">
-                    <h3>Perfil del usuario</h3>
-                </div>
-                <div class="input-rad">
-                    <input type="radio" name="perfil" id="comprador" value="comprador">
-                    <label for="comprador">Comprador</label>
-                    <input type="radio" name="perfil" id="vendedor" value="vendedor">
-                    <label for="vendedor">Vendedor</label>
-                </div>
-               
-            </div>    
-            <div class="inter">
-                <div class="titulo">
-                    <h3>Intereses</h3>
-                </div>
-                <div class="intereses">
-                    <ul type="none" class="listaI">    
-                       <li> <input type="checkbox" name="intereses" value="electro" id="electro">
-                        <label for="electro">Electro</label> </li> 
-                        <li><input type="checkbox" name="intereses" value="moda" id="moda">
-                        <label for="moda">Moda</label></li> 
-                        <li> <input type="checkbox" name="intereses" value="hogar" id="hogar">
-                        <label for="hogar">Hogar</label></li> 
-                        <li> <input type="checkbox" name="intereses" value="jugueteria" id="jugueteria">
-                        <label for="jugueteria">Jugueteria</label></li> 
-                        <li> <input type="checkbox" name="intereses" value="vida-sana" id="healthy">
-                        <label for="healthy">Vida Sana</label></li> 
-                    </ul>
-                </div>
-                
-            </div>
-            <div class="botones">
+        <form action="" method="POST" class="formularioLogin">
+            <div class="input-txtLogin">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre de usuario" >
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" >
+            </div> 
+            <div class="botonesLogin">
                 <button type="submit" value="Enviar">Enviar</button>
-                <button type="reset" value="Borrar">Borrar</button>
             </div>
         </form>
     </main>

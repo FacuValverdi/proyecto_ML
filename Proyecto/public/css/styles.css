@@ -189,6 +189,26 @@ ul.listaI{
 .botones{
     margin:5px;
 }
+.formularioLogin{
+    background-color:#ebebeb ;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0 15px;
+}
+.botonesLogin{
+    margin-top: 10px;
+}
+.input-txtLogin input{
+    margin: 5px;
+    width: 60%;
+    border-radius: 3px;
+}
+.botonesLogin button{
+   color:white;
+   background-color: #1259c3;
+   border-radius: 5px;
+   width: 60%;
+}
 
   /* ----"corte" TABLETS ---- */
 @media(min-width:361px){ 
