@@ -64,6 +64,7 @@ main{
 main div img{
     width: 100%;
 }
+
 main article{
     margin:0 auto 10px;
     width: 90%;
@@ -123,6 +124,7 @@ p{
 }
 footer{
     width: 100%;
+    padding: 5px;
 }
 footer div img{
     width: 100%;
@@ -142,6 +144,50 @@ div div .description-content{
 }
 nav{
     display: none;
+}
+/*--register.html  --*/
+.formulario{
+    background-color:#ebebeb ;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.titulo h3{
+    text-align: justify;
+    padding: 10px;
+    margin: 0px;
+}
+.intereses{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin:auto;
+    margin-bottom: 10px;
+}
+.listaI{
+   margin:5px;
+}
+.listaI li{
+    padding: 5px;
+}
+ul.listaI{
+    text-align: left;
+    justify-content: left;
+    align-items: left;  
+    padding: 0; 
+}
+.input-txt input{
+    margin: 5px;
+    width: 60%;
+    border-radius: 3px;
+}   
+.input-rad input{
+    margin: 5px;
+}
+.botones{
+    margin:5px;
 }
 
   /* ----"corte" TABLETS ---- */
@@ -228,6 +274,27 @@ nav{
     main article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .formulario{
+        background-color:#ebebeb ;
+        text-align: left;
+        justify-content: left;
+        margin: 0;
+        padding-left: 10px;
+        border: 0;
+    }
+    .intereses{
+        display: block;
+        justify-content: center;
+        align-items: center;   
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .input-txt,.input-rad,.botones{
+        padding-left: 10px;
+    }
+    .botones button{
+        width: 150px;
+    }
     .content,.content-off{
         display: flex; 
         justify-content:space-around; 
@@ -242,8 +309,9 @@ nav{
     footer section {
         flex-basis: 33%;
     }
-    .copyrgight{
+    .sec4-footer{
         flex-basis: 100%;
         justify-self: flex-start;
+        margin-top:10px;
     }
 }
