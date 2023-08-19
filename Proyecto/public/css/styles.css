@@ -69,6 +69,10 @@ main article{
     margin:0 auto 10px;
     width: 90%;
     background-color: white;
+    transition:all 1s;
+}
+main article:hover{
+    box-shadow: 1px 10px 10px 1px rgba(0,0,0,.2);
 }
 article div img{
     width: 100%;
@@ -92,6 +96,12 @@ main section h2{
     position: absolute;
     right: 20px;
     top: -15px;
+}
+.carrito--verde i{
+    transition: transform 0.5s;
+}
+.carrito--verde i:hover{
+    transform: rotateZ(-90deg);
 }
 .content .desc-content, .content-off .desc-content{
     border:solid 1px #ebebeb ;
@@ -122,6 +132,7 @@ p{
 .discount-content{
     color:#39b54a;
 }
+
 footer{
     width: 100%;
     padding: 5px;
@@ -134,13 +145,18 @@ div .iconos-footer{
     display: block;
     text-align: center;
     font-size: 30px;
+    transition: color 0.3s;
 }
 div.sec1-desc-footer,div.sec2-desc-footer,div.sec3-desc-footer,section .sec4-footer{
     width: 100%;
     text-align: center;
 }
-div div .description-content{
-       display: none;
+.iconos-footer:hover{
+    color: #1259c3;
+}
+
+.description-content{
+    display: none;
 }
 nav{
     display: none;
@@ -186,6 +202,7 @@ ul.listaI{
 .input-rad input{
     margin: 5px;
 }
+/*--login.html  --*/
 .botones{
     margin:5px;
 }
@@ -205,9 +222,14 @@ ul.listaI{
 }
 .botonesLogin button{
    color:white;
+   font-weight: bold;
    background-color: #1259c3;
    border-radius: 5px;
    width: 60%;
+   transition:background-color 0.3s;
+}
+.botonesLogin button:hover{
+    background-color: #0022AA;
 }
 
   /* ----"corte" TABLETS ---- */
@@ -260,19 +282,21 @@ ul.listaI{
     main section article{
         flex-basis: 40%;
     }
-    main article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-    }
     .content,.content-off{
         display: flex; 
         flex-wrap: wrap;
         justify-content:center;
       
     }
-    div div .description-content{
+    .description-content{
         display: block;
-    } 
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+    .description-content:hover{
+        opacity: 1;
+    }
 
 }
 /* ---- DESKTOP ---- */
@@ -290,9 +314,6 @@ ul.listaI{
     }
     main section article {
         flex-basis: 20%;
-    }
-    main article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .formulario{
         background-color:#ebebeb ;
